@@ -1,7 +1,7 @@
 {
     "tests": [
       {
-        "name": "Sorter working fine",
+        "name": "Testing Sorter",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_sorter.py",
         "input": "",
@@ -11,7 +11,7 @@
         "points": 10
       },
       {
-        "name": "Branches exists",
+        "name": "Checking branches",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_branch_exist.py",
         "input": "",
@@ -21,7 +21,7 @@
         "points": 10
       },
       {
-        "name": "Sort Strings PR Merged",
+        "name": "Checking sort strings PR Merged",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_pr_sort_strings_main.py",
         "input": "",
@@ -31,7 +31,7 @@
         "points": 10
       },
       {
-        "name": "CLI PR merged",
+        "name": "Checking CLI PR merged",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_pr_cli_main.py",
         "input": "",
@@ -41,7 +41,7 @@
         "points": 10
       },
       {
-        "name": "Merge order is correct",
+        "name": "Checking Merge order",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_merge_order.py",
         "input": "",
