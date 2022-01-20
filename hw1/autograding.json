@@ -1,9 +1,19 @@
 {
     "tests": [
       {
+        "name": "Main branch is present",
+        "setup": "sudo -H pip3 install pytest",
+        "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_main_branch_exist.py",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 20
+      },
+      {
         "name": "Testing Sorter",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_sorter.py",
+        "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_sorter_strings.py",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -11,9 +21,9 @@
         "points": 10
       },
       {
-        "name": "Checking branches",
+        "name": "Sort Strings branch exists",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_branch_exist.py",
+        "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_branch_sort_strings_exist.py",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -21,7 +31,7 @@
         "points": 10
       },
       {
-        "name": "Checking sort strings PR Merged",
+        "name": "Sort Strings PR merged",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_pr_sort_strings_main.py",
         "input": "",
@@ -31,7 +41,27 @@
         "points": 10
       },
       {
-        "name": "Checking CLI PR merged",
+        "name": "CLI works",
+        "setup": "sudo -H pip3 install pytest",
+        "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_sorter_cli.py",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "CLI Branch exists",
+        "setup": "sudo -H pip3 install pytest",
+        "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_branch_cli_exist.py",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "CLI PR merged",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_pr_cli_main.py",
         "input": "",
