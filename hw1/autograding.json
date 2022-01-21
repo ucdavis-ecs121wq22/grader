@@ -1,7 +1,7 @@
 {
     "tests": [
       {
-        "name": "Main branch is present",
+        "name": "does_cli_branch_exist",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_main_branch_exist.py",
         "input": "",
@@ -11,7 +11,7 @@
         "points": 30
       },
       {
-        "name": "Testing Sorter",
+        "name": "verify",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_sorter_strings.py",
         "input": "",
@@ -21,7 +21,7 @@
         "points": 10
       },
       {
-        "name": "Sort Strings branch exists",
+        "name": "does_sort_strings_branch_exist",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_branch_sort_strings_exist.py",
         "input": "",
@@ -31,7 +31,7 @@
         "points": 10
       },
       {
-        "name": "Sort Strings PR merged",
+        "name": "pr_sort_strings_main",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_pr_sort_strings_main.py",
         "input": "",
@@ -41,7 +41,7 @@
         "points": 10
       },
       {
-        "name": "CLI works",
+        "name": "verify_cli_sorter",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_sorter_cli.py",
         "input": "",
@@ -51,7 +51,7 @@
         "points": 10
       },
       {
-        "name": "CLI Branch exists",
+        "name": "does_cli_branch_exist",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_branch_cli_exist.py",
         "input": "",
@@ -61,7 +61,7 @@
         "points": 10
       },
       {
-        "name": "CLI PR merged",
+        "name": "pr_cli_main",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_pr_cli_main.py",
         "input": "",
@@ -71,7 +71,7 @@
         "points": 10
       },
       {
-        "name": "Checking Merge order",
+        "name": "test_merge_order",
         "setup": "sudo -H pip3 install pytest",
         "run": "pytest -sv --tb=no --disable-warnings -r N tests/test_merge_order.py",
         "input": "",
