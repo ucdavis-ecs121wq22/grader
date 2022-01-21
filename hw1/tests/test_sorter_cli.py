@@ -27,7 +27,7 @@ def printfile(path) -> str:
     
 def test_verify_cli_sorter_numbers_asc():
     test_file = os.path.join(TESTS_FILES, "input_numbers.txt")
-    command = ["python3", cli_path, "numbers", "asc", test_file, output_path]
+    command = ["python3", cli_path, "num", "asc", test_file, output_path]
     out, err, exitcode = capture(command)
     val = printfile(output_path).replace("\\n", "")
     assert "b'-11357'" == val
@@ -35,7 +35,7 @@ def test_verify_cli_sorter_numbers_asc():
 
 def test_verify_cli_sorter_numbers_desc():
     test_file = os.path.join(TESTS_FILES, "input_numbers.txt")
-    command = ["python3", cli_path, "numbers", "desc", test_file, output_path]
+    command = ["python3", cli_path, "num", "desc", test_file, output_path]
     out, err, exitcode = capture(command)
     val = printfile(output_path).replace("\\n", "")
     assert "b'7531-1'" == val
@@ -43,7 +43,7 @@ def test_verify_cli_sorter_numbers_desc():
 
 def test_verify_cli_sorter_strings_asc():
     test_file = os.path.join(TESTS_FILES, "input_strings.txt")
-    command = ["python3", cli_path, "lexicographically", "asc", test_file, output_path]
+    command = ["python3", cli_path, "lex", "asc", test_file, output_path]
     out, err, exitcode = capture(command)
     val = printfile(output_path).replace("\\n", "")
     assert "b'applebananacactus'" == val
@@ -51,7 +51,7 @@ def test_verify_cli_sorter_strings_asc():
     
 def test_verify_cli_sorter_strings_desc():
     test_file = os.path.join(TESTS_FILES, "input_strings.txt")
-    command = ["python3", cli_path, "lexicographically", "desc", test_file, output_path]
+    command = ["python3", cli_path, "lex", "desc", test_file, output_path]
     out, err, exitcode = capture(command)
     val = printfile(output_path).replace("\\n", "")
     assert "b'cactusbananaapple'" == val
