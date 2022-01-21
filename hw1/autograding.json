@@ -1,9 +1,9 @@
 {
     "tests": [
       {
-        "name": "does_cli_branch_exist",
+        "name": "main_does_cli_branch_exist",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest tests/test_main_branch_exist.py",
+        "run": "pytest -k main_does_cli_branch_exist",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -11,9 +11,9 @@
         "points": 30
       },
       {
-        "name": "verify",
+        "name": "sorter_strings",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest tests/test_sorter_strings.py",
+        "run": "pytest -k sorter_strings",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -23,7 +23,7 @@
       {
         "name": "does_sort_strings_branch_exist",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest tests/test_branch_sort_strings_exist.py",
+        "run": "pytest -k does_sort_strings_branch_exist",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -33,7 +33,7 @@
       {
         "name": "pr_sort_strings_main",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest tests/test_pr_sort_strings_main.py",
+        "run": "pytest -k pr_sort_strings_main",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -43,7 +43,7 @@
       {
         "name": "verify_cli_sorter",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest tests/test_sorter_cli.py",
+        "run": "pytest -k verify_cli_sorter",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -51,9 +51,9 @@
         "points": 10
       },
       {
-        "name": "does_cli_branch_exist",
+        "name": "branch_does_cli_branch_exist",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest tests/test_branch_cli_exist.py",
+        "run": "pytest -k branch_does_cli_branch_exist",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -63,7 +63,7 @@
       {
         "name": "pr_cli_main",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest tests/test_pr_cli_main.py",
+        "run": "pytest -k pr_cli_main",
         "input": "",
         "output": "",
         "comparison": "included",
@@ -73,7 +73,7 @@
       {
         "name": "test_merge_order",
         "setup": "sudo -H pip3 install pytest",
-        "run": "pytest tests/test_merge_order.py",
+        "run": "pytest -k test_merge_order",
         "input": "",
         "output": "",
         "comparison": "included",

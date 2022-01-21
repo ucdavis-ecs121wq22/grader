@@ -1,6 +1,6 @@
 import subprocess
 
-def test_does_cli_branch_exist():
+def test_branch_does_cli_branch_exist():
     branch_cmd = """
     git branch -r
     """
