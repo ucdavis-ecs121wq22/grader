@@ -33,7 +33,6 @@ def test_verify_cli_sorter_numbers_asc():
     out, err, exitcode = capture(command)
     val = printfile(output_numbers_path2).replace("\\n", "")
     assert "b'-11357'" == val
-    assert exitcode == 0
 
 def test_verify_cli_sorter_numbers_desc():
     test_file = os.path.join(TESTS_FILES, "input_numbers.txt")
@@ -41,7 +40,6 @@ def test_verify_cli_sorter_numbers_desc():
     out, err, exitcode = capture(command)
     val = printfile(output_numbers_path).replace("\\n", "")
     assert "b'7531-1'" == val
-    assert exitcode == 0
 
 def test_verify_cli_sorter_strings_asc():
     test_file = os.path.join(TESTS_FILES, "input_strings.txt")
@@ -49,7 +47,6 @@ def test_verify_cli_sorter_strings_asc():
     out, err, exitcode = capture(command)
     val = printfile(output_path).replace("\\n", "")
     assert "b'applebananacactus'" == val
-    assert exitcode == 0
     
 def test_verify_cli_sorter_strings_desc():
     test_file = os.path.join(TESTS_FILES, "input_strings.txt")
@@ -57,4 +54,3 @@ def test_verify_cli_sorter_strings_desc():
     out, err, exitcode = capture(command)
     val = printfile(output_path).replace("\\n", "")
     assert "b'cactusbananaapple'" == val
-    assert exitcode == 0
