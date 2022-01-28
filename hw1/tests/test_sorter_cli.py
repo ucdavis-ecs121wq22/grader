@@ -9,6 +9,7 @@ TESTS_FILES = os.path.join(ABS_PATH, "cases")
 cli_path = os.path.join(ABS_PATH, "..", "src", "sorter_cli.py")
 output_path = os.path.join(TESTS_FILES, "output.txt")
 output_numbers_path = os.path.join(TESTS_FILES, "output_numbers.txt")
+output_numbers_path2 = os.path.join(TESTS_FILES, "output_numbers2.txt")
 
 def capture(command):
     proc = subprocess.Popen(command,
@@ -30,7 +31,7 @@ def test_verify_cli_sorter_numbers_asc():
     test_file = os.path.join(TESTS_FILES, "input_numbers.txt")
     command = ["python3", cli_path, "num", "asc", test_file, output_path]
     out, err, exitcode = capture(command)
-    val = printfile(output_numbers_path).replace("\\n", "")
+    val = printfile(output_numbers_path2).replace("\\n", "")
     assert "b'-11357'" == val
     assert exitcode == 0
 
