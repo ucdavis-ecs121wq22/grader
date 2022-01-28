@@ -30,7 +30,7 @@ def test_verify_cli_sorter_numbers_asc():
     test_file = os.path.join(TESTS_FILES, "input_numbers.txt")
     command = ["python3", cli_path, "num", "asc", test_file, output_path]
     out, err, exitcode = capture(command)
-    val = printfile(output_path).replace("\\n", "")
+    val = printfile(output_numbers_path).replace("\\n", "")
     assert "b'-11357'" == val
     assert exitcode == 0
 
